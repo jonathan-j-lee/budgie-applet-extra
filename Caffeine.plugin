@@ -1,0 +1,9 @@
+[Plugin]
+Loader=python3
+Module=caffeine
+Name=Caffeine
+Description=Screen Dim Button
+Authors=Jonathan Lee
+Copyright=Copyright © 2017 Jonathan Lee
+Website=https://jonathan-j-lee.github.io
+Icon=user-desktop-symbolic
