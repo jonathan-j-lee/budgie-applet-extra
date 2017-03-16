@@ -39,7 +39,7 @@ class CaffeineApplet(Budgie.Applet):
         self.image = Gtk.Image.new_from_icon_name('gnome-power-manager-symbolic',
                                                   Gtk.IconSize.BUTTON)
         self.button.add(self.image)
-        self.button.set_tooltip_text('Toggle screen dimming')
+        self.button.set_tooltip_text('Disable screen dimming')
         self.show_all()
 
         self.power_settings = Gio.Settings(self.POWER_SCHEMA_NAME)
@@ -63,6 +63,7 @@ class CaffeineApplet(Budgie.Applet):
         self.power_settings.set_string('sleep-inactive-ac-type', 'nothing')
         self.power_settings.set_string('sleep-inactive-battery-type', 'nothing')
         self.desktop_settings.set_uint('idle-delay', 0)  # Never dim
+        self.button.set_tooltip_text('Enable screen dimming')
 
     def enable_dim(self):
         """ Restore default settings enabling screen dim. """
@@ -73,6 +74,7 @@ class CaffeineApplet(Budgie.Applet):
                                        self.defaults.get('sleep-inactive-battery-type', 'suspend'))
         self.desktop_settings.set_uint('idle-delay',
                                        self.defaults.get('idle-delay', 60))
+        self.button.set_tooltip_text('Disable screen dimming')
 
     def on_click(self, button):
         """ Delegate action based on current button state. """
