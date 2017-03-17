@@ -1,14 +1,14 @@
-# Caffeine
+# budgie-applet-extra
 
-A Budgie applet to toggle screen dimming temporarily.
+Extra Budgie applets.
 
-## Installation
+## Installation Example
 
-To install globally:
+To install the `caffeine` applet, for instance:
 
 ```shell
-$ git clone https://github.com/jonathan-j-lee/caffeine.git
-$ cd caffeine/
+$ git clone https://github.com/jonathan-j-lee/budgie-applet-extra.git
+$ cd budgie-applet-extra/
 $ cp caffeine/Caffeine.plugin /usr/lib/budgie-desktop/plugins/
 $ cp caffeine/caffeine.py /usr/lib/budgie-desktop/plugins/
 $ chmod +x /usr/lib/budgie-desktop/plugins/caffeine.py
