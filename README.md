@@ -2,6 +2,10 @@
 
 Extra Budgie applets.
 
+| Name                 | Description                       |
+| -------------------- | --------------------------------- |
+| [Caffeine](caffeine) | Toggle screen dimming temporarily |
+
 ## Installation Example
 
 To install the `caffeine` applet, for instance:

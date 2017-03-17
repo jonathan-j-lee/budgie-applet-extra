@@ -4,7 +4,7 @@ A Budgie applet to toggle screen dimming temporarily.
 
 ## Rationale
 
-It is typically good security practice to have strict lock settings and brief timeouts to reduce the risk of a physical intruder gaining access to a system while the user is away. However, when the user is present but does not want to interact with the computer for the sake of remaining "active" (for instance, projecting a PDF while writing), exceptions must be made. Running the settings applet everytime the user wishes to toggle between the guarded and unguarded states is not only inconvenient, but also prone to human error. Hence, this applet provides this toggling functionality programmatically.
+It is typically good security practice to have strict lock settings and brief timeouts to reduce the risk of a physical intruder gaining access to a system while the user is away. However, when the user is present but does not want to interact with the computer for the sake of remaining "active" (for instance, projecting a PDF while writing by hand), exceptions must be made. Running the settings applet everytime the user wishes to toggle between the guarded and unguarded states is not only inconvenient, but also prone to human error. Hence, this applet provides this toggling functionality programmatically.
 
 ## Details
 
@@ -17,7 +17,7 @@ Caffeine takes the form of a toggle button that is initially deactivated. It con
 
 Then,
 
-1. When the button is activated, the applet saves the above four settings, then overwrites them with:
+1. When the button is activated, the applet saves the current values of the above four settings, then overwrites them with:
     1. `idle-dim` to `false`,
     2. `sleep-inactive-ac-type` to `"nothing"`,
     3. `sleep-inactive-battery-type` to `"nothing"`, and
