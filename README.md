@@ -16,7 +16,7 @@ $ chmod +x /usr/lib/budgie-desktop/plugins/caffeine.py
 
 This may require `sudo`.
 
-Then, simply reboot or run `budgie-panel --replace`, and add Caffeine to the panel from Raven.
+Then, simply reboot or run `budgie-panel --replace`, and add Caffeine to the panel from Raven. The installation process for the other applets is similar.
 
 ## Acknowledgements
 

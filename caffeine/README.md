@@ -9,6 +9,7 @@ It is typically good security practice to have strict lock settings and brief ti
 ## Details
 
 Caffeine takes the form of a toggle button that is initially deactivated. It controls four settings:
+
 1. `idle-dim`, which controls whether the screen dims when idle,
 2. `sleep-inactive-ac-type`, which controls the sleep behavior during inactivity while on AC power,
 3. `sleep-inactive-battery-type`, which is the counterpart for `sleep-inactive-ac-type` on battery power, and
@@ -21,7 +22,6 @@ Then,
   2. `sleep-inactive-ac-type` to `"nothing"`,
   3. `sleep-inactive-battery-type` to `"nothing"`, and
   4. `idle-delay` to `0`, which indicates the screen should never blank.
-
 2. When the button is then deactivated, the applet restores the settings saved on activation.
 
 ## Screenshots
