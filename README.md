@@ -13,9 +13,11 @@ To install the `caffeine` applet, for instance:
 ```shell
 $ git clone https://github.com/jonathan-j-lee/budgie-applet-extra.git
 $ cd budgie-applet-extra/
-$ cp caffeine/Caffeine.plugin /usr/lib/budgie-desktop/plugins/
-$ cp caffeine/caffeine.py /usr/lib/budgie-desktop/plugins/
-$ chmod +x /usr/lib/budgie-desktop/plugins/caffeine.py
+$ applet_dir=/usr/lib/budgie-desktop/plugins/org.budgie-applet-extra.applet.caffeine
+$ mkdir $applet_dir
+$ cp caffeine/Caffeine.plugin $applet_dir
+$ cp caffeine/caffeine.py $applet_dir
+$ chmod +x $applet_dir/caffeine.py
 ```
 
 This may require `sudo`.

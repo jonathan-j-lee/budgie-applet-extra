@@ -4,7 +4,9 @@ A Budgie applet to toggle screen dimming temporarily.
 
 ## Rationale
 
-It is typically good security practice to have strict lock settings and brief timeouts to reduce the risk of a physical intruder gaining access to a system while the user is away. However, when the user is present but does not want to interact with the computer for the sake of remaining "active" (for instance, projecting a PDF while writing by hand), exceptions must be made. Running the settings applet everytime the user wishes to toggle between the guarded and unguarded states is not only inconvenient, but also prone to human error. Hence, this applet provides this toggling functionality programmatically.
+It is typically good security practice to have strict lock settings to reduce the risk of an intruder physically gaining access to a system while the user is away.
+However, when the user present but does not need to interact with his or her current session, there should be a mechanism to toggle between guarded and unguarded states easily.
+This application fulfills that role.
 
 ## Details
 
